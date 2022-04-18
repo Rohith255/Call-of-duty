@@ -1,0 +1,139 @@
+.ex{
+    padding: 50px;
+    
+}
+input[type=text] {
+  width: 130px;
+  height: 50px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  color: rgb(90, 10, 90);
+  border-style:dotted;
+
+  text-align: center;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 100%;
+  text-align: center;
+}
+.ex02{
+    padding: 40px;
+    background-color:black;
+}
+.ex:hover{
+  background-color: rgb(90, 10, 90);
+}
+
+.cen{
+    text-align: center;
+    padding: 1%;
+    background-color: gold;
+    color: rgb(90, 10, 90);
+    cursor: pointer;
+}
+.cen:hover{
+     transition: background-color 0.5s,color 1s,padding 1s;
+     width: 99%;
+       transform:skew(18deg);
+       color: aqua;
+       background-color: black;
+}
+.cen::after{
+    z-index: -1;
+}
+.txt1:hover{
+  color: rgb(236, 104, 236);
+}
+.ani{
+  font-size: 300%;
+  margin-right: 23%;
+  width: 100%;
+  color: gold;
+  background-color: black;
+}
+.ani {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 90%;
+    width: 300%;
+    color: rgb(236, 104, 236);
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+    color: gold;
+
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+    color: rgb(236, 104, 236);
+  }
+}
+.pad{
+  padding: 10px;
+}
+.pad1:hover{
+  background-color: violet;
+}
+@-webkit-keyframes blackWhite {
+  0% {
+    color: gold;
+  }
+
+  50% {
+    color: blueviolet;
+  }
+
+  51% {
+    color: aqua;
+  }
+
+  100% {
+    color: rgb(119, 119, 143);
+  }
+}
+
+.ani1 {
+ 
+  -webkit-animation-name: blackWhite;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+}
+.fm{
+  background-color: black;
+}
+
+/* From cssbuttons.io by @adamgiebl */
+button {
+  font-size: 16px;
+  padding: 1em 3.3em;
+  transform: perspective(200px) rotateX(15deg);
+  color: white;
+  font-weight: 900;
+  border: none;
+  border-radius: 9px 9px;
+  background: rgb(249, 235, 41);
+  background: linear-gradient(90deg, rgba(249, 235, 41, 1) 0%, rgba(249, 235, 41, 1) 50%, rgba(249, 235, 41, 1) 100%);
+  box-shadow: blueviolet;
+  will-change: transform;
+  transition: all 0.3s;
+  border-bottom: 2px solid rgba(70, 135, 252, 1);
+}
+
+button:hover {
+  transform: perspective(180px) rotateX(30deg) translateY(2px);
+}
+
+button:active {
+  transform: perspective(170px) rotateX(36deg) translateY(5px);
+}
